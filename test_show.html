@@ -39,6 +39,7 @@ body{
     margin: 20px;
     position: absolute;
     left: 10px;
+
     /* top: 10px; */
     bottom: 10px;
     text-align: left;
@@ -47,11 +48,12 @@ body{
 .name{
     font-size: 130px;
     font-weight: bold;
-
+    
 }
 .desc{
     font-size: 40px;
-    max-width:850px;
+    /* max-width:850px; */
+    max-width: 65%;
     word-wrap: break-word;
 }
 
@@ -60,8 +62,8 @@ body{
     position: absolute;
     right: 10px;
     /* top: 60px; */
-    bottom: 10px;
-    
+    top: 60px;
+    background-color: #22222285;
     text-align: right;
     color: aliceblue;
     font-size: 30px;
@@ -146,8 +148,8 @@ width: 100%;
 
 <div class="menu">
        
-        <button>ホーム</button>
-        <button>絞り込み</button>
+        <button onclick="location.href='home.html'">ホーム</button>
+        <button onclick="location.href='test_show.html'">魚</button>
         <button>マップ</button>
         <button>お知らせ</button>
         <button>サイト</button>

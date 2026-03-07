@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>tortal_accurate_魚図鑑</title>
+<style>
+body{
+    background: black;
+    margin:0;
+    /* height:100vh; */
+    display:flex;
+    flex-direction:column;
+}
+
+.menu{
+    position:relative;
+    background:#222;
+    padding:15px;
+    z-index: 1000;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    top:0;
+    left:0;
+    /* width:100%; */
+}
+
+.menu button{
+    /* flex:1; */
+    width: 170px;
+    height: 50px;
+    background:none;     /* 背景を消す */
+    border:none;         /* 枠を消す */
+    color:#ccc;
+    font-size:20px;
+
+    cursor:pointer;      /* マウスカーソル */
+    padding:8px 16px;
+    position:relative;
+}
+.menu button:hover{
+    color:white;
+}
+
+.menu button::after{
+
+    content:"";
+    position:absolute;
+
+    left:0;
+    bottom:-4px;
+
+    width:0;
+    height:2px;
+
+    background:white;
+
+    transition:0.3s;
+
+}
+
+
+.menu button:hover::after{
+
+    width: 100%;
+}
+
+.menu input{
+    
+    border:none;
+    width: 200px;
+  
+    padding:6px;
+}
+
+h1{
+    color: aliceblue;
+    align-items:center;
+    justify-content:center;
+    width: 100%;
+    font-size: 50px;
+    display:flex;
+    flex-direction:column;
+}
+
+.mozis{
+    color: aliceblue;
+    position: relative;
+    font-size: 40px;
+    display:flex;
+    width: 100%;
+
+}
+
+.mozis img{
+    right: 10px;
+    object-fit: contain;
+    display: block;
+    position: absolute;
+    max-width: 60%;
+}
+
+.mozis p{
+    word-wrap: break-word;
+    max-width: 40%;
+    margin: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+    <div class="menu">
+        <button onclick="location.href='home.html'">ホーム</button>
+        <button onclick="location.href='test_show.html'">魚</button>
+        <button>マップ</button>
+         <button>お知らせ</button>
+         <button onclick="location.href='site_nite.html'">サイト</button>
+        
+        <input type="text" placeholder="検索">
+    </div>
+    <h1>このサイトについて</h1>
+    <div class ="mozis">
+        <p>おおおおおおおおおおおおおおおおおおおおおおこんにちはさようなら</p>
+        <img src="sakana/guguhu.png">
+    </div>
+</body>
+</html>
